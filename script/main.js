@@ -1,13 +1,11 @@
 /* 로딩화면 - 안됨*/
-
 /*
 $(window).load(function () {
     $('.intropage').hide();
-});
-*/
+});*/
 
 $(function () {
- $('.intropage').delay(2000).fadeOut(400);
+
     /* 
         대상 : ab1 bgimage
         불릿 클릭시 bgimage 변경하기
