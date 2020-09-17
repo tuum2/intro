@@ -18,7 +18,7 @@ body {
     top: 0;
     z-index: 1000;
     background-color: #252934;
-    display: none;
+/*    display: none;*/
 }
 
 .introtext {
@@ -52,14 +52,13 @@ body {
 
 @keyframes typingAni {
     0% {
-        width: 0%
+        width: 0%;
     }
 
     100% {
-        width: 305px
+        width: 305px;
     }
 
-    ;
 }
 
 @keyframes cursor {
@@ -79,7 +78,7 @@ body {
 /* 메인 페이지 (첫화면) */
 
 #main {
-    background: url(../images/main_bg.png) no-repeat 0 -50px/cover;
+    background: url(../images/main_bg.png) no-repeat center -50px/cover;
 }
 
 .main {
@@ -91,7 +90,7 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 5.625rem;
+    font-size: 5vw;
     white-space: nowrap;
 
 }
@@ -270,9 +269,8 @@ body {
 }
 
 .poful li {
-	
-    width:450px;
-	height:780px;
+    position: relative;
+    flex: 1;
 	background-color:#05C2C9;
 	margin-right:10px;
 	text-align: center;
@@ -288,15 +286,19 @@ body {
 	margin:50px 0;
 }
 
-.pofinfo p{
-	width: 350px;
-	margin: 0 auto;
-	font-size: 0.875rem;
-	line-height: 30px;
-	
+.pofinfo p{ 
+    margin: 0 auto;
+    font-size: 0.875rem;
+    line-height: 30px;
+    padding: 15px; 
+    margin-bottom: 80px;
 }
 
 .pofbtn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 	width: 120px;
 	height:40px;
 	background-color: #fff;
@@ -304,7 +306,6 @@ body {
 	color:#DC1D73;
 	font-size: .875rem;
 	font-weight: bold;
-	margin-top: 30px;
 	cursor: pointer;
 }
 
