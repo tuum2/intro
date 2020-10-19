@@ -3,147 +3,243 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
-    <meta name="Title" content="tuum">
-    <meta name="Subject" content="tuum">
-    <meta name="Keywords" content="tuum">
-    <meta name="Copyright" content="copyright (c) tuum all rights reserved. contact webmaster for more information tuum@kakao.com">
-    <title>hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디도 웹퍼도 아닌</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="script/jquery-3.5.1.min.js"></script>
-    <script src="script/jquery-ui-1.8.23.custom.min.js"></script>
-    <script src="script/main.js"></script>
+    <link rel="stylesheet" href="css/media.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.easeScroll.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+
+    </script>
 
 </head>
 
 <body>
-    <div class="intropage">
-        <p class="introtext">HELLO.</p>
-    </div>
-    <header></header>
-    <section class="page" id="main">
-        <div class="inbox main">
-            <h1 class="maintit">I AM A WEB PUBLISHER</h1>
-        </div>
-    </section>
-    <section class="page" id="about">
-        <div class="inbox rbx">
-            <div class="ibx about">
-                <div class="ab1">
-                    <div class="profile_photo"></div>
-                    <h2 class="profile_title">TUUM</h2>
-                    <p class="pr_text">Hi, I'm TUUM, a Front-end Developer with a love for UX, Humanitarian Causes and Education.
-                        <!--
-The dream: To design solutions that improve the quality of life of millions of people-->
-                    </p>
-                    <ul id="btnGroup">
-                        <li class="on"><span class="ir">블릿</span></li>
-                        <li><span class="ir">블릿</span></li>
-                        <li><span class="ir">블릿</span></li>
 
+    <!--header-->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#hero">
+                        <h1><span class="pc">W</span>eb <span class="pc">P</span>ublisher</h1>
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#hero" data-after="home">HOME</a></li>
+                        <li><a href="#services" data-after="SKILLS">SKILLS</a></li>
+                        <li><a href="#projects" data-after="PROJECTS">PROJECTS</a></li>
+                        <li><a href="#about" data-after="ABOUT">ABOUT</a></li>
+                        <li><a href="#contact" data-after="CONTACT">CONTACT</a></li>
                     </ul>
                 </div>
-                <div class="ab2">
-                    <h2 class="ab2tit">제목</h2>
-                    <p>
-                        Hi, I'm TUUM, a Front-end Developer with a love for UX, Humanitarian Causes and Education.<br>
-                        
-                        The dream: To design solutions that improve the quality of life of millions of people
-                    </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--1page-->
+
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>안녕하세요!<span></span></h1>
+                <h1>황선미입니다.<span></span></h1>
+                <h1>꾸벅(__)(--)<span></span></h1>
+                <a href="#projects" type="button" class="cta pc">Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--2page-->
+    <section id="services">
+        <div class="services container">
+            <div class="service-top">
+                <h1 class="section-title">SK<span class="pc">I</span>LLS</h1>
+                <p>I build bespoke, scalable web applications using modern web technologies and tools.</p>
+            </div>
+            <div class="service-bottom">
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAFAElEQVR4nO2abUwcRRjH/zM3e8aW3l01YItUrN4Xc2gwrRosGoGgViSWRHxJBKNJSZD0xaSKJIQS2kD6wRhMNMGXxIJfrNJqkUDDS4NUtC1tacoZm1qTqsViRNLworfc7vill8Byc9zuzV2Pdn/fHmb22f8Mzzzz7NwANjY2NjY2Ny1E1OCrP+CcmJrcA6AMwNrESZLKGDhpu93lqfPXv6CG68BET16d/qeBUf52/LQlhHQA1VdnJjiAmnAdhBOgOLQyAKDApov7qobioy++3FP9QS4HBgGUQzABVPQwo3o6ozqW6+AB4Nd9VccY1cGoni7qI4wARvUF9n21zc9wHS2EIEOiRulwjj8oaMVPjdu6gMXjMCJeAoYHFaK3wJHcg79GBqC3ALgLWDwOIxEiQDPaGQBQuvnRmBXGky+7hgBgXcg2jsNI1EsgZD/gmohBXvw5JNAtIvolcM1ubPdb1ZYQFGq0LS8BczOZrFiOANEE9NXUCqvHZKCgaS+fb8ewBLSIdrJiVrc4Aoge0U5WzOq+4XKAWd2md4FYeOIoZytmL23nHF4K8mnns5mnYnZqwKzuSN8CC2bPaJuGc7Jm7kKrS1HfdTvVyhRnoLe07/yd1h2Gx6xuM5VgTMIq+kd3g5GXAUwB/AxAHgfBLgBvxuTYgFndwghQqL4gfIy2Gd4aPFPqVubq3EzVPQ71lVVsrtLNVN3tUCtqvjudasmpALO6454EG74/8RClgc8AEIDvrM3JOQwAe3843gnwYg6yA0CtJedhMKs7rjmg+eTRLI/y77cuFlixSgl8WJuT836ozeWcbXSxANzsv6qW4R63KccRkJYDzGbT/SM9fPFfgwAAAnSvm2Q75rds35D34/6R3n6A53NC3gDQNL/9E3/3bU7V8R4npBjgq42eX80uDFuRmtUtLQm6Wdgzxz8JyBeulbfW5GXnBY2NLmWukXA9H8DOjuGO5uKNxbMAcPDskTSqB/ugaFkRXypBt7QI2JJVZPobocS3ua///KHjAB4hDFsBNB/55WCaos30A8QHglHNwYoK7y3+LVqfEiMgMZXgahpo0im+5iC7zl74vD1I1C4w+AD8rFFa+PD6kitm/EmrBBM1AdneFw9f/L3tHID7AZwDVA+AUago8K4v/8usP2m7gMw6IBKEEO5WgttcTA24mOpxscDpFOdMgddrfvBAEtYB0ZC69vWB6fGPM29B0MvS6AlCKues+pK4BOSWwkuRcsfWcQDjsfq5brtAsrDsdgHZyFsCgpOVj9pfClPxJROSToSW6xIwIq0Ufq3kQFKfBouQ9svQckXamWCi+arzubC55vmib0g07SGk7QKJZsn/XJT6pH0LJJotmzsi5pyl2kPE8C2gjSlUQ0/P07nRvCgZ6e596jGFalCodlnUJ1IEtAJ4B8BgX9+T8dCXADhAODhHq6iHcALWTLh3/506CRCUg0N4xybJucw5aU2d8NRfbyEYGsjnQwP5S1aR0faThTACpL9IUtaWjT0BiXpRtPcLEn0PQWp97/f7nI5p9x4OLv9+McEY4bxNS5mq8/n8Yc/grSA1ApyzKxtAtXjdL04HQbVjJkV479cKUidAobwM4ADFprsfPCn1iu2l4Q25nNCI936tIKwErcCIns6IDtmDB4DMjaeOMaKDEfG9XytIjYDQt/eVkew47ePyE6TkJXBjnCHY2NjY2NjcJPwPsoDXElZGtJYAAAAASUVORK5CYII=">
+                    </div>
+                    <h2>Web Design</h2>
+                    <p>I build bespoke, scalable web applications using modern web technologies and tools. I ensure all websites adhere to insustry standards and deliver the best possible user experience.</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAFAElEQVR4nO2abUwcRRjH/zM3e8aW3l01YItUrN4Xc2gwrRosGoGgViSWRHxJBKNJSZD0xaSKJIQS2kD6wRhMNMGXxIJfrNJqkUDDS4NUtC1tacoZm1qTqsViRNLworfc7vill8Byc9zuzV2Pdn/fHmb22f8Mzzzz7NwANjY2NjY2Ny1E1OCrP+CcmJrcA6AMwNrESZLKGDhpu93lqfPXv6CG68BET16d/qeBUf52/LQlhHQA1VdnJjiAmnAdhBOgOLQyAKDApov7qobioy++3FP9QS4HBgGUQzABVPQwo3o6ozqW6+AB4Nd9VccY1cGoni7qI4wARvUF9n21zc9wHS2EIEOiRulwjj8oaMVPjdu6gMXjMCJeAoYHFaK3wJHcg79GBqC3ALgLWDwOIxEiQDPaGQBQuvnRmBXGky+7hgBgXcg2jsNI1EsgZD/gmohBXvw5JNAtIvolcM1ubPdb1ZYQFGq0LS8BczOZrFiOANEE9NXUCqvHZKCgaS+fb8ewBLSIdrJiVrc4Aoge0U5WzOq+4XKAWd2md4FYeOIoZytmL23nHF4K8mnns5mnYnZqwKzuSN8CC2bPaJuGc7Jm7kKrS1HfdTvVyhRnoLe07/yd1h2Gx6xuM5VgTMIq+kd3g5GXAUwB/AxAHgfBLgBvxuTYgFndwghQqL4gfIy2Gd4aPFPqVubq3EzVPQ71lVVsrtLNVN3tUCtqvjudasmpALO6454EG74/8RClgc8AEIDvrM3JOQwAe3843gnwYg6yA0CtJedhMKs7rjmg+eTRLI/y77cuFlixSgl8WJuT836ozeWcbXSxANzsv6qW4R63KccRkJYDzGbT/SM9fPFfgwAAAnSvm2Q75rds35D34/6R3n6A53NC3gDQNL/9E3/3bU7V8R4npBjgq42eX80uDFuRmtUtLQm6Wdgzxz8JyBeulbfW5GXnBY2NLmWukXA9H8DOjuGO5uKNxbMAcPDskTSqB/ugaFkRXypBt7QI2JJVZPobocS3ua///KHjAB4hDFsBNB/55WCaos30A8QHglHNwYoK7y3+LVqfEiMgMZXgahpo0im+5iC7zl74vD1I1C4w+AD8rFFa+PD6kitm/EmrBBM1AdneFw9f/L3tHID7AZwDVA+AUago8K4v/8usP2m7gMw6IBKEEO5WgttcTA24mOpxscDpFOdMgddrfvBAEtYB0ZC69vWB6fGPM29B0MvS6AlCKues+pK4BOSWwkuRcsfWcQDjsfq5brtAsrDsdgHZyFsCgpOVj9pfClPxJROSToSW6xIwIq0Ufq3kQFKfBouQ9svQckXamWCi+arzubC55vmib0g07SGk7QKJZsn/XJT6pH0LJJotmzsi5pyl2kPE8C2gjSlUQ0/P07nRvCgZ6e596jGFalCodlnUJ1IEtAJ4B8BgX9+T8dCXADhAODhHq6iHcALWTLh3/506CRCUg0N4xybJucw5aU2d8NRfbyEYGsjnQwP5S1aR0faThTACpL9IUtaWjT0BiXpRtPcLEn0PQWp97/f7nI5p9x4OLv9+McEY4bxNS5mq8/n8Yc/grSA1ApyzKxtAtXjdL04HQbVjJkV479cKUidAobwM4ADFprsfPCn1iu2l4Q25nNCI936tIKwErcCIns6IDtmDB4DMjaeOMaKDEfG9XytIjYDQt/eVkew47ePyE6TkJXBjnCHY2NjY2NjcJPwPsoDXElZGtJYAAAAASUVORK5CYII=">
+                    </div>
+                    <h2>Web Design</h2>
+                    <p>I build bespoke, scalable web applications using modern web technologies and tools. I ensure all websites adhere to insustry standards and deliver the best possible user experience.</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAFAElEQVR4nO2abUwcRRjH/zM3e8aW3l01YItUrN4Xc2gwrRosGoGgViSWRHxJBKNJSZD0xaSKJIQS2kD6wRhMNMGXxIJfrNJqkUDDS4NUtC1tacoZm1qTqsViRNLworfc7vill8Byc9zuzV2Pdn/fHmb22f8Mzzzz7NwANjY2NjY2Ny1E1OCrP+CcmJrcA6AMwNrESZLKGDhpu93lqfPXv6CG68BET16d/qeBUf52/LQlhHQA1VdnJjiAmnAdhBOgOLQyAKDApov7qobioy++3FP9QS4HBgGUQzABVPQwo3o6ozqW6+AB4Nd9VccY1cGoni7qI4wARvUF9n21zc9wHS2EIEOiRulwjj8oaMVPjdu6gMXjMCJeAoYHFaK3wJHcg79GBqC3ALgLWDwOIxEiQDPaGQBQuvnRmBXGky+7hgBgXcg2jsNI1EsgZD/gmohBXvw5JNAtIvolcM1ubPdb1ZYQFGq0LS8BczOZrFiOANEE9NXUCqvHZKCgaS+fb8ewBLSIdrJiVrc4Aoge0U5WzOq+4XKAWd2md4FYeOIoZytmL23nHF4K8mnns5mnYnZqwKzuSN8CC2bPaJuGc7Jm7kKrS1HfdTvVyhRnoLe07/yd1h2Gx6xuM5VgTMIq+kd3g5GXAUwB/AxAHgfBLgBvxuTYgFndwghQqL4gfIy2Gd4aPFPqVubq3EzVPQ71lVVsrtLNVN3tUCtqvjudasmpALO6454EG74/8RClgc8AEIDvrM3JOQwAe3843gnwYg6yA0CtJedhMKs7rjmg+eTRLI/y77cuFlixSgl8WJuT836ozeWcbXSxANzsv6qW4R63KccRkJYDzGbT/SM9fPFfgwAAAnSvm2Q75rds35D34/6R3n6A53NC3gDQNL/9E3/3bU7V8R4npBjgq42eX80uDFuRmtUtLQm6Wdgzxz8JyBeulbfW5GXnBY2NLmWukXA9H8DOjuGO5uKNxbMAcPDskTSqB/ugaFkRXypBt7QI2JJVZPobocS3ua///KHjAB4hDFsBNB/55WCaos30A8QHglHNwYoK7y3+LVqfEiMgMZXgahpo0im+5iC7zl74vD1I1C4w+AD8rFFa+PD6kitm/EmrBBM1AdneFw9f/L3tHID7AZwDVA+AUago8K4v/8usP2m7gMw6IBKEEO5WgttcTA24mOpxscDpFOdMgddrfvBAEtYB0ZC69vWB6fGPM29B0MvS6AlCKues+pK4BOSWwkuRcsfWcQDjsfq5brtAsrDsdgHZyFsCgpOVj9pfClPxJROSToSW6xIwIq0Ufq3kQFKfBouQ9svQckXamWCi+arzubC55vmib0g07SGk7QKJZsn/XJT6pH0LJJotmzsi5pyl2kPE8C2gjSlUQ0/P07nRvCgZ6e596jGFalCodlnUJ1IEtAJ4B8BgX9+T8dCXADhAODhHq6iHcALWTLh3/506CRCUg0N4xybJucw5aU2d8NRfbyEYGsjnQwP5S1aR0faThTACpL9IUtaWjT0BiXpRtPcLEn0PQWp97/f7nI5p9x4OLv9+McEY4bxNS5mq8/n8Yc/grSA1ApyzKxtAtXjdL04HQbVjJkV479cKUidAobwM4ADFprsfPCn1iu2l4Q25nNCI936tIKwErcCIns6IDtmDB4DMjaeOMaKDEfG9XytIjYDQt/eVkew47ePyE6TkJXBjnCHY2NjY2NjcJPwPsoDXElZGtJYAAAAASUVORK5CYII=">
+                    </div>
+                    <h2>Web Design</h2>
+                    <p>I build bespoke, scalable web applications using modern web technologies and tools. I ensure all websites adhere to insustry standards and deliver the best possible user experience.</p>
+                </div>
+                <div class="service-item">
+                    <div class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAFAElEQVR4nO2abUwcRRjH/zM3e8aW3l01YItUrN4Xc2gwrRosGoGgViSWRHxJBKNJSZD0xaSKJIQS2kD6wRhMNMGXxIJfrNJqkUDDS4NUtC1tacoZm1qTqsViRNLworfc7vill8Byc9zuzV2Pdn/fHmb22f8Mzzzz7NwANjY2NjY2Ny1E1OCrP+CcmJrcA6AMwNrESZLKGDhpu93lqfPXv6CG68BET16d/qeBUf52/LQlhHQA1VdnJjiAmnAdhBOgOLQyAKDApov7qobioy++3FP9QS4HBgGUQzABVPQwo3o6ozqW6+AB4Nd9VccY1cGoni7qI4wARvUF9n21zc9wHS2EIEOiRulwjj8oaMVPjdu6gMXjMCJeAoYHFaK3wJHcg79GBqC3ALgLWDwOIxEiQDPaGQBQuvnRmBXGky+7hgBgXcg2jsNI1EsgZD/gmohBXvw5JNAtIvolcM1ubPdb1ZYQFGq0LS8BczOZrFiOANEE9NXUCqvHZKCgaS+fb8ewBLSIdrJiVrc4Aoge0U5WzOq+4XKAWd2md4FYeOIoZytmL23nHF4K8mnns5mnYnZqwKzuSN8CC2bPaJuGc7Jm7kKrS1HfdTvVyhRnoLe07/yd1h2Gx6xuM5VgTMIq+kd3g5GXAUwB/AxAHgfBLgBvxuTYgFndwghQqL4gfIy2Gd4aPFPqVubq3EzVPQ71lVVsrtLNVN3tUCtqvjudasmpALO6454EG74/8RClgc8AEIDvrM3JOQwAe3843gnwYg6yA0CtJedhMKs7rjmg+eTRLI/y77cuFlixSgl8WJuT836ozeWcbXSxANzsv6qW4R63KccRkJYDzGbT/SM9fPFfgwAAAnSvm2Q75rds35D34/6R3n6A53NC3gDQNL/9E3/3bU7V8R4npBjgq42eX80uDFuRmtUtLQm6Wdgzxz8JyBeulbfW5GXnBY2NLmWukXA9H8DOjuGO5uKNxbMAcPDskTSqB/ugaFkRXypBt7QI2JJVZPobocS3ua///KHjAB4hDFsBNB/55WCaos30A8QHglHNwYoK7y3+LVqfEiMgMZXgahpo0im+5iC7zl74vD1I1C4w+AD8rFFa+PD6kitm/EmrBBM1AdneFw9f/L3tHID7AZwDVA+AUago8K4v/8usP2m7gMw6IBKEEO5WgttcTA24mOpxscDpFOdMgddrfvBAEtYB0ZC69vWB6fGPM29B0MvS6AlCKues+pK4BOSWwkuRcsfWcQDjsfq5brtAsrDsdgHZyFsCgpOVj9pfClPxJROSToSW6xIwIq0Ufq3kQFKfBouQ9svQckXamWCi+arzubC55vmib0g07SGk7QKJZsn/XJT6pH0LJJotmzsi5pyl2kPE8C2gjSlUQ0/P07nRvCgZ6e596jGFalCodlnUJ1IEtAJ4B8BgX9+T8dCXADhAODhHq6iHcALWTLh3/506CRCUg0N4xybJucw5aU2d8NRfbyEYGsjnQwP5S1aR0faThTACpL9IUtaWjT0BiXpRtPcLEn0PQWp97/f7nI5p9x4OLv9+McEY4bxNS5mq8/n8Yc/grSA1ApyzKxtAtXjdL04HQbVjJkV479cKUidAobwM4ADFprsfPCn1iu2l4Q25nNCI936tIKwErcCIns6IDtmDB4DMjaeOMaKDEfG9XytIjYDQt/eVkew47ePyE6TkJXBjnCHY2NjY2NjcJPwPsoDXElZGtJYAAAAASUVORK5CYII=">
+                    </div>
+                    <h2>Web Design</h2>
+                    <p>I build bespoke, scalable web applications using modern web technologies and tools. I ensure all websites adhere to insustry standards and deliver the best possible user experience.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="page" id="skill">
-        <div class="inbox skill">
-           <div class="skilltop">
-                 <h2>SKILLS</h2>
-                <p>I build bespoke, scalable web applications using modern web technologies and tools.</p>
+
+    <!--3page-->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">
+                    Recent <span class="pc">Projects</span>
+                </h1>
             </div>
-            <div class="skill_list">
-                <ul class="skul">
-                    <li>
-                        <h3>90</h3>
-                        <h4>HTML</h4>
-                        <p>HTML is the standard markup language for Web pages.</p>
-                    </li>
-                    <li>
-                        <h3>90</h3>
-                        <h4>CSS</h4>
-                        <p>CSS is the language we use to style an HTML document.</p>
-                    </li>
-                    <li>
-                        <h3>70</h3>
-                        <h4>JAVASCRIPT</h4>
-                        <p>JavaScript is the world's most popular programming language.JavaScript is the programming language of the Web.</p>
-                    </li>
-                    <li>
-                        <h3>80</h3>
-                        <h4>J-QUERY</h4>
-                        <p>jQuery is a JavaScript Library. jQuery greatly simplifies JavaScript programming.</p>
-                    </li>
-                    <li>
-                        <h3>90</h3>
-                        <h4>PHOTOSHOP</h4>
-                        <p>Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS.</p>
-                    </li>
-                    <li>
-                        <h3>90</h3>
-                        <h4>ILLUSTRATOR</h4>
-                        <p>Adobe Illustrator is a software application for creating drawings, illustrations, and artwork using a Windows or MacOS computer.</p>
-                    </li>
-                    
-                </ul>
+            <div class="all-projects">
+                <div class="project-item item1">
+                    <div class="project-info">
+                        <h1>Project 1</h1>
+                        <h2>Go Go Soccer Academy</h2>
+                        <p>GOGO SOCCER ACADEMY is a soccer academy. Efforts were made to give a dynamic effect. The overall blue color gives more strength.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/gas.png" alt="gas">
+                    </div>
+                </div>
+                <div class="project-item item2">
+                    <div class="project-info">
+                        <h1>Project 2</h1>
+                        <h2>SEKAI NO OWARI</h2>
+                        <p>Sekai no Owari is a Japanese pop band, originating from Tokyo. The band was formed in 2005 and has four members: Nakajin, Fukase, Saori and DJ Love.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/sek.jpg" alt="gas">
+                    </div>
+                </div>
+                <div class="project-item item3">
+                    <div class="project-info">
+                        <h1>Project 3</h1>
+                        <h2>Epik High</h2>
+                        <p>Epik High is a South Korean alternative hip hop group from Seoul, composed of Tablo, Mithra Jin, and DJ Tukutz.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/ep.png" alt="gas">
+                    </div>
+                </div>
+                <div class="project-item item4">
+                    <div class="project-info">
+                        <h1>Project 4</h1>
+                        <h2>Nike</h2>
+                        <p>GOGO SOCCER ACADEMY is a soccer academy. Efforts were made to give a dynamic effect. The overall blue color gives more strength.</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="images/nike.png" alt="gas">
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-    <section class="page">
-        <div class="inbox poflist">
-            <ul class="poful">
-                <li>
-                   <img src="images/gas450.png" alt="" class="gas">
-                        <div class="pofinfo">
-                            <h5>GOGO SOCCER ACADEMY</h5>
-                            <p>GOGO SOCCER ACADEMY is a soccer academy. 
-Efforts were made to give a dynamic effect. 
-The overall blue color gives more strength.</p>
-                        <button class="pofbtn">GO</button>
-                        </div>
-                        
-                </li>
-                <li>
-                   <img src="images/se450.png" alt="">
-                        <div class="pofinfo">
-                            <h5>SEKAI NO OWARI</h5>
-                            <p>Sekai no Owari is a Japanese pop band, originating from Tokyo. The band was formed in 2005 and has four members: Nakajin, Fukase, Saori and DJ Love. .</p>
-                       <button class="pofbtn">GO</button>
-                        </div>
-                        
-                </li>
-                <li>
-                   <img src="images/ep450.png" alt="">
-                        <div class="pofinfo">
-                            <h5>Epik High</h5>
-                            <p>Epik High is a South Korean alternative hip hop group from Seoul, composed of Tablo, Mithra Jin, and DJ Tukutz. </p>
-                        <button class="pofbtn">GO</button>
-                        </div>
-                        
-                </li>
-            </ul>
+
+
+    <!--4page about-->
+    <section id="about">
+        <div class="about container">
+            <div class="col-left">
+                <div class="about-img">
+                    <img src="images/profile2.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-right">
+                <h1 class="section-title">About<span class="pc">ME</span></h1>
+                <h2>Web Publisher</h2>
+                <p>Hi, I'm SEONMI, a Front-end Developer with a love for UX, Humanitarian Causes and Education.
+                    The dream: To design solutions that improve the quality of life of millions of people</p>
+                <a href="#" class="cta">Download resume</a>
+            </div>
         </div>
     </section>
-    <section class="page">
-        <div class="inbox pofdetail">
-        	<ul class="pofdetailul">
-        		<li>
-        			<div class="pdl"></div>
-        			<div class="pdr"></div>
-        		</li>
-        	</ul>
+
+
+    <!-- 5page contact-->
+    <section id="contact">
+        <div class="contact container">
+            <div>
+                <h1 class="section-title">
+                    Contact <span class="pc">INFO</span>
+                </h1>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/phone.png" /></div>
+                    <div class="contact-info">
+                        <h1>PHONE</h1>
+                        <h2>82+10-4418-8181</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/email.png" /></div>
+                    <div class="contact-info">
+                        <h1>EMAIL</h1>
+                        <h2>tuum@kakao.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/address.png" /></div>
+                    <div class="contact-info">
+                        <h1>ADDRESS</h1>
+                        <h2>Gang-Dong gu, Seoul, Korea</h2>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>푸터</footer>
+
+    <!--6page footer-->
+    <section id="footer">
+        <div class="footer container">
+            <div class="brand">
+                <h1 class="section-title"><span class="pc">W</span>eb <span class="pc">P</span>ublisher</h1>
+                <h2>Your Complete Web Solution</h2>
+                <div class="social-icon">
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/clouds/100/000000/github.png" /></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/clouds/100/000000/instagram-new--v2.png" /></a>
+                    </div>
+                    <div class="social-item">
+                        <a href="#"><img src="https://img.icons8.com/clouds/100/000000/facebook-new.png" /></a>
+                    </div>
+
+                </div>
+                <p>Copyright @ 2020 tuum. All rights reserved</p>
+            </div>
+        </div>
+    </section>
 
 
 
-</body></html>
+
+
+
+
+
+
+
+</body>
+
+</html>
